@@ -1,15 +1,10 @@
 {
-    "version":2,
-    "builds":[
-        {
-            "src":"./bot.js",
-            "use":"@vercel/node"
-        }
-    ],
-    "routes":[
-        {
-            "src":"/(.*)",
-            "dest":"/"
-        }
-    ]
+   "version": 2,
+   "name": "elitmus",
+   "builds": [
+      { "src": "bot.js", "use": "@vercel/node" }
+   ],
+   "routes": [
+      { "src": "/(.*)", "dest": "/bot.js" }
+   ]
 }
