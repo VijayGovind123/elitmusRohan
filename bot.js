@@ -267,5 +267,6 @@ bot.on("callback_query", function (msg) {
         },
       });
       bot.editMessageReplyMarkup({inline_keyboard: []}, {chat_id: chatId, message_id: msg.message.message_id});
+      bot.pollingError = (err) => console.log(err);
     }
   });
